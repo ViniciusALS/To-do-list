@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Box from '@material-ui/core/Box';
+const ListElement = React.lazy(() => import('./ListElement'));
 
 class App extends React.Component {
 
     render(){
         return (
-            <box>
-                <h1>test</h1>
-            </box>
+            <ListElement
+                value="test" />
         );
     }
 }
