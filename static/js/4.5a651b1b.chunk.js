@@ -1,0 +1,2 @@
+(this["webpackJsonptodo-list"]=this["webpackJsonptodo-list"]||[]).push([[4],{16:function(t,e,a){"use strict";a.r(e);var n=a(3),s=a(1),u=a(4),c=a(6),r=a(8),i=a(0),o=a.n(i),l=a(36),p=function(t){function e(t){var a;return Object(n.a)(this,e),(a=Object(u.a)(this,Object(c.a)(e).call(this,t))).state={value:a.props.value},a}return Object(r.a)(e,t),Object(s.a)(e,[{key:"render",value:function(){return o.a.createElement(l.a,null,this.state.value)}}]),e}(o.a.Component);e.default=p}}]);
+//# sourceMappingURL=4.5a651b1b.chunk.js.map
