@@ -1,3 +1,5 @@
+import React, { Suspense } from 'react';
+import Loading from "./Loading";
 import "./stylesheets/ListElement.css";
 
 class ListElement extends React.Component {
