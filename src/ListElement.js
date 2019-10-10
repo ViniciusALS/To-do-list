@@ -1,6 +1,4 @@
-import React from 'react';
-import editIcon from "./resources/edit-icon.svg";
-import deleteIcon from "./resources/delete-icon.svg";
+import "./stylesheets/ListElement.css";
 
 class ListElement extends React.Component {
 
