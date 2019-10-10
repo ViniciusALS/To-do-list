@@ -1,8 +1,6 @@
-import React, { Suspense } from 'react';
-import Loading from "./Loading";
+import React from 'react';
 import "./stylesheets/ListElement.css";
-
-const MoreListOptions = React.lazy(()=>import("./MoreListOptions"));
+import MoreListOptions from "./MoreListOptions";
 
 class ListElement extends React.Component {
 
@@ -16,14 +14,12 @@ class ListElement extends React.Component {
     render(){
 
         return (
-            <Suspense fallback={<Loading/>}>
-                <div className="list-element">
-                    <input className="element-text"
-                        value={this.state.value}/>
+            <div className="list-element">
+                <input className="element-text"
+                    value={this.state.value}/>
 
-                    <MoreListOptions className="element-options"/>
-                </div>
-            </Suspense>
+                <MoreListOptions className="element-options"/>
+            </div>
         );
     }
 }
