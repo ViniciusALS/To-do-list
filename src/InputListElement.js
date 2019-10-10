@@ -1,24 +1,18 @@
 import React from 'react';
 
+import add from "./resources/add.svg"
+
 import "./stylesheets/InputListElement.css";
 
 class InputListElement extends React.Component {
-
-    constructor(props){
-        super(props);
-        this.state = {
-            value: this.props.value
-        };
-    }
 
     render(){
 
         return (
             <div className="list-element">
                 <input className="element-text"
-                    value={this.state.value}/>
-
-                <MoreListOptions className="element-options"/>
+                    value={this.props.value}/>
+                <img src={add}/>
             </div>
         );
     }
