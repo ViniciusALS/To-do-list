@@ -23,7 +23,7 @@ class App extends React.Component {
                 <InputListElement
                     value={this.state.enteredValue}/>
                 <List
-                    itens={listItens}/>
+                    itens={this.state.listItens}/>
             </Suspense>
         );
     }
