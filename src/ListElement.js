@@ -1,4 +1,6 @@
 import React from 'react';
+import editIcon from "./resources/edit-icon.svg";
+import deleteIcon from "./resources/delete-icon.svg";
 
 class ListElement extends React.Component {
 
@@ -10,8 +12,13 @@ class ListElement extends React.Component {
     }
 
     render(){
+
         return (
-            <h1>{this.state.value}</h1>
+            <div>
+                <p>{this.state.value}</p>
+                <img src={editIcon}/>
+                <img src={deleteIcon}/>
+            </div>
         );
     }
 }
