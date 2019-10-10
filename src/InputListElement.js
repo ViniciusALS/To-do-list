@@ -6,6 +6,14 @@ import "./stylesheets/InputListElement.css";
 
 class InputListElement extends React.Component {
 
+    constructor(props){
+        super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.state = {
+            value: "Add new element"
+        };
+    }
     render(){
 
         return (
