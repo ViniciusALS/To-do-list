@@ -5,7 +5,8 @@ import Loading from "./Loading";
 
 import "./stylesheets/index.css";
 
-const ListElement = React.lazy(() => import('./ListElement'));
+const InputListElement = React.lazy(()=>import("./InputListElement"));
+const List = React.lazy(() => import('./List'));
 
 class App extends React.Component {
 
