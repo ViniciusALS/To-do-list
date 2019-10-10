@@ -16,11 +16,14 @@ class ListElement extends React.Component {
     render(){
 
         return (
-            <div>
-                <p>{this.state.value}</p>
-                <img src={editIcon}/>
-                <img src={deleteIcon}/>
-            </div>
+            <Suspense fallback={<Loading/>}>
+                <div className="list-element">
+                    <input className="element-text"
+                        value={this.state.value}/>
+
+                    <MoreListOptions className="element-options"/>
+                </div>
+            </Suspense>
         );
     }
 }
