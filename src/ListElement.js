@@ -1,5 +1,4 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
 
 class ListElement extends React.Component {
 
@@ -12,9 +11,7 @@ class ListElement extends React.Component {
 
     render(){
         return (
-            <Box>
-                {this.state.value}
-            </Box>
+            <h1>{this.state.value}</h1>
         );
     }
 }
