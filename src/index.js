@@ -9,6 +9,13 @@ const InputListElement = React.lazy(()=>import("./InputListElement"));
 const List = React.lazy(() => import('./List'));
 
 class App extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            enteredValue: "Add new element",
+            listItens: []
+        }
+    }
 
     render(){
         return (
