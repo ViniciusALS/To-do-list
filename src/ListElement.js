@@ -2,6 +2,8 @@ import React, { Suspense } from 'react';
 import Loading from "./Loading";
 import "./stylesheets/ListElement.css";
 
+const MoreListOptions = React.lazy(()=>import("./MoreListOptions"));
+
 class ListElement extends React.Component {
 
     constructor(props){
