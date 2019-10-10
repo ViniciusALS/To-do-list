@@ -11,16 +11,15 @@ const List = React.lazy(() => import('./List'));
 class App extends React.Component {
     constructor(props){
         super(props);
+        this.handleAddListIten = this.handleAddListIten.bind(this);
         this.state = {
-            enteredValue: "Add new element",
             listItens: []
         }
     }
 
-    addListIten(event){
-        const iten = event.target.value;
-
-        let newList = this.state.listItens.concat(iten);
+    handleAddListIten(iten){
+        let newList = this.state.listItens.slice();
+        newList.push(iten);
 
         this.setState({
             listItens: newList
@@ -31,8 +30,7 @@ class App extends React.Component {
         return (
             <Suspense fallback={<Loading/>}>
                 <InputListElement
-                    value={this.state.enteredValue}
-                    onSubmit={this.addListIten}/>
+                    onSubmit={this.handleAddListIten}/>
                 <List
                     itens={this.state.listItens}/>
             </Suspense>
