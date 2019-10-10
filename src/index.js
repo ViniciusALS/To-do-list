@@ -17,11 +17,22 @@ class App extends React.Component {
         }
     }
 
+    addListIten(event){
+        const iten = event.target.value;
+
+        let newList = this.state.listItens.concat(iten);
+
+        this.setState({
+            listItens: newList
+        });
+    }
+
     render(){
         return (
             <Suspense fallback={<Loading/>}>
                 <InputListElement
-                    value={this.state.enteredValue}/>
+                    value={this.state.enteredValue}
+                    onSubmit={this.addListIten}/>
                 <List
                     itens={this.state.listItens}/>
             </Suspense>
