@@ -9,11 +9,18 @@ class InputListElement extends React.Component {
     render(){
 
         return (
-            <div className="list-element">
-                <input className="element-text"
-                    value={this.props.value}/>
-                <img src={add}/>
-            </div>
+            <form onSubmit={this.handleSubmit} className="list-element">
+                <input
+                    className="element-text"
+                    type="text"
+                    value={this.state.value}
+                    onChange={this.handleChange}/>
+                <input
+                    type="image"
+                    src={add}
+                    name="submit"
+                    alt="submit"/>
+            </form>
         );
     }
 }
