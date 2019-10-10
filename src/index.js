@@ -19,9 +19,11 @@ class App extends React.Component {
 
     render(){
         return (
-            <Suspense fallback={<div>Loading...</div>}>
-                <ListElement
-                    value="test" />
+            <Suspense fallback={<Loading/>}>
+                <InputListElement
+                    value={this.state.enteredValue}/>
+                <List
+                    itens={listItens}/>
             </Suspense>
         );
     }
