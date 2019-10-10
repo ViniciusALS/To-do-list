@@ -23,6 +23,15 @@ class InputListElement extends React.Component {
             value: "Add new element"
         });
     }
+
+    handleChange(event){
+        let newValue = event.target.value;
+
+        this.setState({
+            value: newValue
+        });
+    }
+
     render(){
 
         return (
