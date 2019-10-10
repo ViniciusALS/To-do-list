@@ -1,5 +1,8 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
+
+import Loading from "./Loading";
+
 import "./stylesheets/index.css";
 
 const ListElement = React.lazy(() => import('./ListElement'));
