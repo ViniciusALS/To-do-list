@@ -1,4 +1,5 @@
 import React from 'react';
+
 import moreIcon from "./resources/more-icon.svg";
 import editIcon from "./resources/edit-icon.svg";
 import deleteIcon from "./resources/delete-icon.svg";
