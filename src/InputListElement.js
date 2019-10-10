@@ -14,6 +14,15 @@ class InputListElement extends React.Component {
             value: "Add new element"
         };
     }
+
+    handleSubmit(event){
+        event.preventDefault();
+        this.props.onSubmit(this.state.value);
+
+        this.setState({
+            value: "Add new element"
+        });
+    }
     render(){
 
         return (
