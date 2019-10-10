@@ -1,6 +1,8 @@
 import React from 'react';
-import "./stylesheets/ListElement.css";
+
 import MoreListOptions from "./MoreListOptions";
+
+import "./stylesheets/ListElement.css";
 
 class ListElement extends React.Component {
 
