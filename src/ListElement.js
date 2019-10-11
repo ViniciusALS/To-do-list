@@ -26,9 +26,9 @@ class ListElement extends React.Component {
                     {/* <input
                         type="image"
                         src={moreIcon}/> */}
-                    <input
+                    {/* <input
                         type="image"
-                        src={editIcon}/>
+                        src={editIcon}/> */}
                     <input
                         type="image"
                         src={deleteIcon}/>
