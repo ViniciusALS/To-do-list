@@ -9,8 +9,6 @@ const ListElement = React.lazy(() => import('./ListElement'));
 class List extends React.Component {
 
     renderList(listArray){
-        const length = listArray.length;
-
         return (listArray.map((element)=>
             <ListElement value={element}/>
         ));
