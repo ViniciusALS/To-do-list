@@ -1,6 +1,9 @@
 import React from 'react';
 
-import MoreListOptions from "./MoreListOptions";
+// import MoreListOptions from "./MoreListOptions";
+import moreIcon from "./resources/more-icon.svg";
+import editIcon from "./resources/edit-icon.svg";
+import deleteIcon from "./resources/delete-icon.svg";
 
 import "./stylesheets/ListElement.css";
 
@@ -20,7 +23,11 @@ class ListElement extends React.Component {
                 <input className="element-text"
                     value={this.state.value}/>
 
-                <MoreListOptions className="element-options"/>
+                <div className="element-options">
+                    {/* <img src={moreIcon}/> */}
+                    <img src={editIcon}/>
+                    <img src={deleteIcon}/>
+                </div>
             </div>
         );
     }
