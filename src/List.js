@@ -10,7 +10,8 @@ class List extends React.Component {
 
     renderList(listArray){
         return (listArray.map((element)=>
-            <ListElement value={element}/>
+            <ListElement
+                key={element}
         ));
     }
 
