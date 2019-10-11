@@ -8,9 +8,16 @@ class ListElement extends React.Component {
 
     constructor(props){
         super(props);
+        this.handleDelete = this.handleDelete.bind(this);
         this.state = {
             value: this.props.value
         };
+    }
+
+    handleDelete(event){
+        event.preventDefault();
+
+        this.props.onDelete(this.state.value);
     }
 
     render(){
@@ -24,6 +31,8 @@ class ListElement extends React.Component {
                     <input
                         type="image"
                         alt="Delete element button"
+                        src={deleteIcon}
+                        onClick={this.handleDelete}/>
                 </div>
             </div>
         );
