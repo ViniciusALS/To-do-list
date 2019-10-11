@@ -23,9 +23,15 @@ class ListElement extends React.Component {
                     value={this.state.value}/>
 
                 <div className="element-options">
-                    {/* <img src={moreIcon}/> */}
-                    <img src={editIcon}/>
-                    <img src={deleteIcon}/>
+                    {/* <input
+                        type="image"
+                        src={moreIcon}/> */}
+                    <input
+                        type="image"
+                        src={editIcon}/>
+                    <input
+                        type="image"
+                        src={deleteIcon}/>
                 </div>
             </div>
         );
