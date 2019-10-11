@@ -12,6 +12,7 @@ class App extends React.Component {
     constructor(props){
         super(props);
         this.handleAddListIten = this.handleAddListIten.bind(this);
+        this.handleDeleteListIten = this.handleDeleteListIten.bind(this);
         this.state = {
             listItens: []
         }
@@ -26,13 +27,28 @@ class App extends React.Component {
         });
     }
 
+    handleDeleteListIten(iten){
+        let newList = this.state.listItens.slice();
+
+        for (let i = 0; i < newList.length; i++){
+            if (newList[i] === iten){
+                newList.splice(i, 1);
+            }
+        }
+
+        this.setState({
+            listItens: newList
+        });
+    }
+
     render(){
         return (
             <Suspense fallback={<Loading/>}>
                 <InputListElement
                     onSubmit={this.handleAddListIten}/>
                 <List
-                    itens={this.state.listItens}/>
+                    itens={this.state.listItens}
+                    onDeleteIten={this.handleDeleteListIten}/>
             </Suspense>
         );
     }
