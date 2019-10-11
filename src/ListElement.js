@@ -23,7 +23,7 @@ class ListElement extends React.Component {
                 <div className="element-options">
                     <input
                         type="image"
-                        src={deleteIcon}/>
+                        alt="Delete element button"
                 </div>
             </div>
         );
