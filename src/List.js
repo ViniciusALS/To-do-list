@@ -12,6 +12,8 @@ class List extends React.Component {
         return (listArray.map((element)=>
             <ListElement
                 key={element}
+                value={element}
+                onDelete={this.props.onDeleteIten}/>
         ));
     }
 
