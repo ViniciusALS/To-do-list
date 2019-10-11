@@ -46,7 +46,7 @@ class InputListElement extends React.Component {
                     type="image"
                     src={add}
                     name="submit"
-                    alt="submit"/>
+                    alt="Add new element button"/>
             </form>
         );
     }
