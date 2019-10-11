@@ -11,7 +11,7 @@ class InputListElement extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.state = {
-            value: "Add new element"
+            value: ""
         };
     }
 
@@ -20,7 +20,7 @@ class InputListElement extends React.Component {
         this.props.onSubmit(this.state.value);
 
         this.setState({
-            value: "Add new element"
+            value: ""
         });
     }
 
@@ -39,6 +39,7 @@ class InputListElement extends React.Component {
                 <input
                     className="element-text"
                     type="text"
+                    placeholder="Add new element"
                     value={this.state.value}
                     onChange={this.handleChange}/>
                 <input
