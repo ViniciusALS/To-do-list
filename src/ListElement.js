@@ -25,13 +25,12 @@ class ListElement extends React.Component {
                 <input className="element-text"
                     value={this.state.value}/>
 
-                <div className="element-options">
-                    <input
-                        type="image"
-                        alt="Delete element button"
-                        src={deleteIcon}
-                        onClick={this.handleDelete}/>
-                </div>
+                <input
+                    className="element-options"
+                    type="image"
+                    alt="Delete element button"
+                    src={deleteIcon}
+                    onClick={this.handleDelete}/>
             </div>
         );
     }
