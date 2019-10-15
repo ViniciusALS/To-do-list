@@ -44,15 +44,19 @@ class App extends React.Component {
     render(){
         return (
             <Suspense fallback={<Loading/>}>
-                <InputListElement
-                    onSubmit={this.handleAddListIten}/>
-                <List
-                    itens={this.state.listItens}
-                    onDeleteIten={this.handleDeleteListIten}/>
+
+                <div className="todo-list">
+                    <h1>To - do List</h1>
+
+                    <InputListElement
+                        onSubmit={this.handleAddListIten}/>
+                    <List
+                        itens={this.state.listItens}
+                        onDeleteIten={this.handleDeleteListIten}/>
+                </div>
             </Suspense>
         );
     }
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
