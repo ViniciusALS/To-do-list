@@ -2,8 +2,6 @@ import React from 'react';
 
 import deleteIcon from "./resources/delete-icon.svg";
 
-import "./stylesheets/ListElement.css";
-
 class ListElement extends React.Component {
 
     constructor(props){

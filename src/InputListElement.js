@@ -2,8 +2,6 @@ import React from 'react';
 
 import add from "./resources/add.svg"
 
-import "./stylesheets/InputListElement.css";
-
 class InputListElement extends React.Component {
 
     constructor(props){
