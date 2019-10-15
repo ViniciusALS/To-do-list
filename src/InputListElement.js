@@ -33,7 +33,7 @@ class InputListElement extends React.Component {
     render(){
 
         return (
-            <form onSubmit={this.handleSubmit} className="list-element">
+            <form onSubmit={this.handleSubmit} className="list-element input-bar">
                 <input
                     className="element-text"
                     type="text"
@@ -41,6 +41,7 @@ class InputListElement extends React.Component {
                     value={this.state.value}
                     onChange={this.handleChange}/>
                 <input
+                    className="element-options"
                     type="image"
                     src={add}
                     name="submit"
